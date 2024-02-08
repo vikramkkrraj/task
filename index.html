@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="heading-container">
+        <h1 class="heading">YAY! It’s BOGO</h1>
+      </div>
+
+      <div class="unit-1" onclick="toggleUnit1()">
+        <div class="standard">Standard Price</div>
+        <div class="unit-container">
+          <div class="left-container">
+            <input
+              type="radio"
+              class="radio-input"
+              id="radio1"
+              name="radio-group"
+            />
+            <label for="radio1" class="radio-text"> 1 Unit </label>
+            <span class="discount">10% off</span>
+          </div>
+          <div class="price-container">
+            <span class="price" id="unit-1-price">$ 10.00 USD</span>
+            <span class="old-price">$18.00 USD </span>
+          </div>
+        </div>
+        <div class="content">
+          <table>
+            <tr>
+              <th></th>
+              <!-- Empty cell for spacing -->
+              <th>size</th>
+              <th>color</th>
+            </tr>
+            <tr>
+              <td>#1</td>
+              <td>
+                <select id="size">
+                  <option value="M">M</option>
+                  <option value="S">S</option>
+                  <option value="L">L</option>
+                </select>
+              </td>
+              <td>
+                <select id="size">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>#2</td>
+              <td>
+                <select id="size">
+                  <option value="M">M</option>
+                  <option value="S">S</option>
+                  <option value="L">L</option>
+                </select>
+              </td>
+              <td>
+                <select id="size">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="unit-2" onclick="toggleUnit2()">
+        <div class="most">Most popular</div>
+        <div class="unit-container">
+          <div class="left-container">
+            <input
+              type="radio"
+              class="radio-input"
+              id="radio1"
+              name="radio-group"
+            />
+            <label for="radio1" class="radio-text"> 2 Unit </label>
+            <span class="discount">20% off</span>
+          </div>
+
+          <div class="price-container">
+            <span class="price" id="unit-2-price">$ 18.00 USD</span>
+            <span class="old-price">$24.00 USD </span>
+          </div>
+        </div>
+        <div class="content">
+          <table>
+            <tr>
+              <th></th>
+              <!-- Empty cell for spacing -->
+              <th>size</th>
+              <th>color</th>
+            </tr>
+            <tr>
+              <td>#1</td>
+              <td>
+                <select id="size">
+                  <option value="M">M</option>
+                  <option value="S">S</option>
+                  <option value="L">L</option>
+                </select>
+              </td>
+              <td>
+                <select id="size">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>#2</td>
+              <td>
+                <select id="size">
+                  <option value="M">M</option>
+                  <option value="S">S</option>
+                  <option value="L">L</option>
+                </select>
+              </td>
+              <td>
+                <select id="size">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="unit-3" onclick="toggleUnit3()">
+        <div class="best-deal">Best Deal</div>
+        <div class="unit-container">
+          <div class="left-container">
+            <input
+              type="radio"
+              class="radio-input"
+              id="radio1"
+              name="radio-group"
+            />
+            <label for="radio1" class="radio-text"> 3 Unit </label>
+            <span class="discount">30% off</span>
+          </div>
+          <div class="price-container">
+            <span class="price" id="unit-3-price">$ 24.00 USD</span>
+            <span class="old-price">$30.00 USD </span>
+          </div>
+        </div>
+        <div class="content">
+          <table>
+            <tr>
+              <th></th>
+              <!-- Empty cell for spacing -->
+              <th>size</th>
+              <th>color</th>
+            </tr>
+            <tr>
+              <td>#1</td>
+              <td>
+                <select id="size">
+                  <option value="M">M</option>
+                  <option value="S">S</option>
+                  <option value="L">L</option>
+                </select>
+              </td>
+              <td>
+                <select id="size">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>#2</td>
+              <td>
+                <select id="size">
+                  <option value="M">M</option>
+                  <option value="S">S</option>
+                  <option value="L">L</option>
+                </select>
+              </td>
+              <td>
+                <select id="size">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="free-total">
+        <p class="free">Free Delivery</p>
+        <p class="total-price">
+          Total : <span id="total-amount">$ 00.00 USD</span>
+        </p>
+      </div>
+      <button class="btn">+ Add to Cart</button>
+      <div class="powered">
+        <span class="poweredby">@ Powered by Pumper</span>
+      </div>
+    </div>
+  </body>
+</html>
